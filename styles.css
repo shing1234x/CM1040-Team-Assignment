@@ -60,6 +60,54 @@ main {
 	width: calc(100% - 250px);
 }
 
-Footer {
-	
+#page-container {
+	position: relative;
+	min-height: 100vh;
+}
+
+#content-wrap {
+	padding-bottom: 273px; /* Height of the footer */
+}
+
+footer {
+	position: relative;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 273px; /* Height of the footer */
+}
+
+#planatrip {
+	padding: 0px;
+	margin-left: 20px;
+}
+
+#List_3 {	
+	padding: 0px;
+	margin-left: 35px;
+}
+
+#directions {	
+	padding: 0px;
+	margin-left: 20px;
+}
+
+#tickets {	
+	padding: 0px;
+	margin-left: 20px;
+}
+
+#thingstodo {	
+	padding: 0px;
+	margin-left: 20px;
+}
+
+#List_4 {
+	padding: 0px;
+	margin-left: 35px;
+}
+
+#news {
+	padding: 0px;
+	margin-left: 20px;
 }
