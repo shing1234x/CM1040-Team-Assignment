@@ -66,48 +66,63 @@ main {
 }
 
 #content-wrap {
-	padding-bottom: 273px; /* Height of the footer */
+	padding-bottom: 234px; /* Height of the footer */
 }
 
 footer {
 	position: relative;
-	text-align: center;
 	bottom: 0;
 	width: 100%;
-	height: 273px; /* Height of the footer */
+	height: 234px; /* Height of the footer */
 }
 
-#planatrip {
-	padding: 0px;
-	margin-left: 20px;
+.planatrip {
+	list-style: none;
+	text-align: left;
+	padding: 10px;
+	margin-left: 40px;
 }
 
-#List_3 {	
-	padding: 0px;
-	margin-left: 35px;
+.List_3 {	
+	list-style: none;
+	text-align: left;
+	padding: 10px;
+	margin-left: 0px;
 }
 
-#directions {	
+.directions {
+	list-style: none;
+	text-align: left;	
 	padding: 0px;
-	margin-left: 20px;
+	margin-top: -100px;
+	margin-left: 285px;
 }
 
-#tickets {	
+.tickets {	
+	list-style: none;
+	text-align: left;
 	padding: 0px;
-	margin-left: 20px;
+	margin-top: -35px;
+	margin-left: 525px;
 }
 
-#thingstodo {	
-	padding: 0px;
-	margin-left: 20px;
+.thingstodo {	
+	list-style: none;
+	text-align: left;
+	padding: 10px;
+	margin-top: -43px;
+	margin-left: 850px;
 }
 
-#List_4 {
-	padding: 0px;
-	margin-left: 35px;
+.List_4 {
+	list-style: none;
+	padding: 10px;
+	margin-left: 0px;
 }
 
-#news {
-	padding: 0px;
-	margin-left: 20px;
+.news {
+	list-style: none;
+	padding: 10px;
+	margin-top: -182px;
+	margin-left: 1100px;
 }
