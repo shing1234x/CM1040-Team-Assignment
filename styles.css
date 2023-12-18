@@ -2,10 +2,21 @@ body, div, section, nav, main {
 	outline-offset: -1px;
 	margin:0px;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 250px auto auto;
+  grid-template-areas:
+  'header header header'
+  'nav nav nav'
+  'sidebar main main'
+  'footer footer footer';
+}
+
 header {
+	grid-area: header;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	width:100%;
-	height:100px;
+	height:120px;
 }
 
 #parkhours {
@@ -28,14 +39,19 @@ header {
 
 #logo {
 	outline: none;
-	position: absolute;
 	top: 0px;
-	left: 300px;
+	float:left;
+	height:100%;
 }
 
+#logo img{
+	float:left;
+    max-width: 100%;
+    max-height: 100%;
+}
 
 #socialmedia {
-	position: absolute;
+	
 	left: 1150px;	
 	float:left;
 	width:20%;
@@ -43,112 +59,90 @@ header {
 }
 
 #youtube {
-	position: absolute;
+	float:left;
 	top: 30px;
 	left: 10px;
 }
 
 #Instagram {
-	position: absolute;
+	float:left;
 	top: 30px;
 	left: 50px;
 }
 
 #Twitter {
-	position: absolute;
+	float:left;
 	top: 30px;
 	left: 90px;
 }
 
 /* Where home, language, accessibility, jobs, and contact Us is just below main header bar */
 #topnavigationbar{
+	grid-area: nav;
 	outline: 1px solid #aaa;
 	text-align: center;
 	height:30px;
 }
 
+#topnavigationbar a{
+	margin: 30px;
+}
+
 /* main section of page */
 main{
+	grid-area: main;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	position: fixed;
-	left: 250px;
 	}
 
 /* sidebar or aside */
 #sidebar {
+	grid-area: sidebar;
 	outline: 1px solid #aaa;
-	float:left;
-	width:240px;
-	height: 335px;
+	height: 100%;
 }
 	/*Sidebar(aside) plan a trip */
-.List_1 {
+.List_sidebar {
 	list-style: none;
 	margin: 0px;
 	padding: 0px;
 	margin-left: 10px;
 }
+
+.List_sidebar li{
+	margin-bottom: 10px;
+}
+
 /* Things to do */
-.List_2 {
+.List_sidebar_subbullet {
 	list-style: circle;
 	padding: 0px;
 	margin-left: 15px;
 }
 
 footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
+	grid-area: footer;
+	margin-left:auto;
+    margin-right:auto;
+
 	
 }
 /* footer lists */
-.planatrip {
-	list-style: none;
-	text-align: left;
-	padding: 10px;
-	margin-left: 40px;
-}
 
-.List_3 {	
+.List_footer *{
 	list-style: none;
-	text-align: left;
-	padding: 10px;
-	margin-left: 0px;
-}
-
-.directions {
-	list-style: none;
-	text-align: left;	
 	padding: 0px;
-	margin-top: -100px;
-	margin-left: 285px;
+	
 }
 
-.tickets {	
-	list-style: none;
+.List_footer {
+	float:left;
+	margin-left:20px;
+}
+
+.List_footer_subbullet{
+	margin: 0px;
+}
+
+.List_footer_subbullet li{
 	text-align: left;
-	padding: 0px;
-	margin-top: -35px;
-	margin-left: 525px;
-}
-
-.thingstodo {	
-	list-style: none;
-	text-align: left;
-	padding: 10px;
-	margin-top: -43px;
-	margin-left: 850px;
-}
-
-.List_4 {
-	list-style: none;
-	padding: 10px;
-	margin-left: 0px;
-}
-
-.news {
-	list-style: none;
-	padding: 10px;
-	margin-top: -182px;
-	margin-left: 1100px;
 }

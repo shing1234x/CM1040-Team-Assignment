@@ -15,6 +15,7 @@
 </head>
 
 <body>
+<div class="grid-container">
 	<header>
 		<div id="parkhours">
 			<span>Park Hours</span>
@@ -28,14 +29,13 @@
 		</div>
 		<a href="index.html">
 			<div id="title">
-				<h1>Wonder World Amusement Park</h1>
 				<div id="logo">
-					<img src="./images/logo.jpeg" alt="WonderWorldLogo" width="100" height="100">
-					</div>
+				<img src="./images/logo.jpeg" alt="WonderWorldLogo">
+				</div>
+				<h1>Wonder World Amusement Park</h1>
 			</div>
 		</a>
 		<div id="socialmedia">
-			<span>Social Media</span>
 			<div id="youtube">
 				<img src="./images/youtube.png" alt="youtube" width="25" height="25">
 			</div>
@@ -78,42 +78,57 @@
 
 	<!-- Load external JavaScript -->
 	<script src="scripts.js"></script>
-
-</body>
-
-<footer>
-		</nav>
-		<!-- all other page content -->
-		<footer id="footer">
-			<!-- Footer -->
-			<ul class="planatrip">
-				<li><a href="#">Plan a Trip</a></li>
-					<ul class="List_3">
+	
+	<footer>
+			<!-- all other page content -->
+			<!-- <footer id="footer"> -->
+				<!-- Footer -->
+				<div class="List_footer">
+				<ul class="planatrip">
+					<li><a href="#">Plan a Trip</a></li>
+					<ul class="List_footer_subbullet">
 						<li><a href="#">Calendar</a></li>
 						<li><a href="#">What to expect</a></li>
+					</ul>
 				</ul>
-			</ul>
-			<ul class="directions">
-				<li><a href="#">Directions</a></li>
-			</ul>
-			<ul class="tickets">
-				<a href="#">Tickets & Member Passes</a>
-			</ul>
-			<ul class="thingstodo">
-				<a href="#">Things to do</a>
-					<ul class="List_4">
+				</div>
+				
+				<div class="List_footer">
+				<ul class="directions">
+					<li><a href="#">Directions</a></li>
+				</ul>
+				</div>
+				
+				<div class="List_footer">
+				<ul class="tickets">
+					<a href="#">Tickets & Member Passes</a>
+				</ul>
+				</div>
+				
+				<div class="List_footer">
+				<ul class="thingstodo">
+					<a href="#">Things to do</a>
+					<ul class="List_footer_subbullet">
 						<li><a href="#">Rides</a></li>
 						<li><a href="#">Attractions</a></li>
 						<li><a href="#">Animals</a></li>
 						<li><a href="#">Shops</a></li>
 						<li><a href="#">Dining</a></li>
 						<li><a href="#">Food Allergies</a></li>
+					</ul>
 				</ul>
-			</ul>
-			<ul class="news">
-				<a href="#">News</a>
-			</ul>
-	</nav>
-</footer>
+				</div>
+				
+				<div class="List_footer">
+				<ul class="news">
+					<a href="#">News</a>
+				</ul>
+				</div>
+	</footer>
+	
+</div>
+</body>
+
+
 
 </html>
