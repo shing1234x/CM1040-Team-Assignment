@@ -15,35 +15,30 @@
 </head>
 
 <body>
-<div class="grid-container">
-	<header>
+<div class="grid-container_job"> <!-- Using Grid Layout -->
+	<header> <!-- A common header for the three webpages -->
 		<div id="parkhours">
 			<span>Park Hours</span>
-				<br> Sunday 10:00am - 6:00pm
-				<br> Monday 10:00am - 6:00pm
-				<br> Tuesday 10:00am - 6:00pm
-				<br> Wednesday 10:00am - 6:00pm
-				<br> Thursday 10:00am - 6:00pm
-				<br> Friday 10:00am - 6:00pm
-				<br> Saturday 10:00am - 6:00pm
+				<br> Saturday - Sunday 9:00am - 6:00pm
+				<br> Monday - Friday 10:00am - 6:00pm
 		</div>
 		<a href="index.html">
 			<div id="title">
 				<div id="logo">
-				<img src="./images/logo.jpeg" alt="WonderWorldLogo">
+				
 				</div>
 				<h1>Wonder World Amusement Park</h1>
 			</div>
 		</a>
 		<div id="socialmedia">
-			<div id="youtube">
-				<img src="./images/youtube.png" alt="youtube" width="25" height="25">
+			<div class="socialmedia_icon">
+				<img src="./images/youtube.png" alt="youtube">
 			</div>
-			<div id="Instagram">
-				<img src="./images/Insta logo.jpeg" alt="instagram" width="25" height="25">
+			<div class="socialmedia_icon">
+				<img src="./images/Insta logo.png" alt="instagram">
 			</div>
-			<div id="Twitter">
-				<img src="./images/Twitter x logo.png" alt="twitter" width="25" height="25">
+			<div class="socialmedia_icon">
+				<img src="./images/Twitter x logo.png" alt="twitter">
 			</div>
 		</div>
 	</header>
@@ -56,33 +51,119 @@
 		<a href="#">Contact Us</a>
 	</nav>
 
-		<nav id="sidebar">
-			<ul class="jobs">
-				<li><a href="#">Jobs available</a></li>
-				<ul class="available">
-					<li><a href="#">Ride operator</a></li>
-					<li><a href="#">Maintenance</a></li>
-					<li><a href="#">Ride Engineer</a></li>
-					<li><a href="#">Entertainment Specialist</a></li>
-					<li><a href="#">Research & Development</a></li>
-					<li><a href="#">Line Cook</a></li>
-					<li><a href="#">Park Avatar</a></li>
-				</ul>
-			</ul>
-		</nav>
+	<nav id="sidebar_job"> <!-- the sidebar in jobs.html will use different css style with main.html-->
+		<h2>Jobs available</h2>
+		<!-- each div will contain a title and the duties of a job available-->
+		<a href="#">
+		<div>
+		<ul class="Job_Title">Ride Operator</ul>
+			<li>Operate amusement park rides</li>
+			<li>Provide safety guidelines to guests</li>
+			<li>Conduct pre-operational checks</li>
+		</div>
+		</a>
+		
+		<a href="#">
+		<div>
+		<ul class="Job_Title">Maintenance Technician</ul>
+			<li>Perform maintenance on park facilities</li>
+			<li>Troubleshoot and repair mechanical issues</li>
+			<li>Ensure all equipment meets safety standards and regulations</li>
+		</div>
+		</a>
+		
+		<a href="#">
+		<div>
+		<ul class="Job_Title">Ride Engineer</ul>
+			<li>Design and oversee the construction of new park rides</li>
+			<li>Analyze ride performance and safety metrics</li>
+			<li>Collaborate with manufacturers and maintenance teams on ride specifications</li>
+		</div>
+		</a>
+		
+		<a href="#">
+		<div>
+		<ul class="Job_Title">Entertainment Specialist</ul>
+			<li>Plan and coordinate events</li>
+			<li>Manage performers and schedules</li>
+			<li>Enhance guest experience through engaging entertainment offerings</li>
+		</div>
+		</a>
+		
+		<a href="#">
+		<div>
+		<ul class="Job_Title">Research & Development Specialist</ul>
+			<li>Innovate new park attractions and services</li>
+			<li>Conduct market research</li>
+			<li>Oversee the prototype development process</li>
+		</div>
+		</a>
+		
+		<a href="#">
+		<div>
+		<ul class="Job_Title">Line Cook</ul>
+			<li>Prepare food items</li>
+			<li>Maintain a clean kitchen workspace</li>
+			<li>Manage kitchen supplies and food items</li>
+		</div>
+		</a>
+		
+		<a href="#">
+		<div>
+		<ul class="Job_Title">Park Avatar (Character Performer)</ul>
+			<li>Perform as a costumed character to entertain and interact with guests</li>
+			<li>Participate in parades and photo opportunities with guests</li>
+			<li>Attend regular rehearsals and training sessions</li>
+		</div>
+		</a>
+	</nav>
 
-		<main>
-			<h1>Why work for us?</h1>
-			<p>If you want to get paid to have fun this is the place for you. With out of this world attractions and new wonders of the world. There are many different job opportunities with possibility of advancement. You get to enjoy perks and rewards. Working at Wonder World you get discounted admission, tickets, food, and merchandise. You can also get bonuses, health benefits, retirement plans, and networking opportunities. There are also associate get togethers in the park quarterly. And many more perks available. You also have opportunities to meet new people, learn about other cultures and countries. opportunities are endless and Wonder World</p>
-		</main>
+	<main id="job_details">
+		<button>Apply Now</button>
+		<h1>Ride Operator</h1>
+		<h2>Job Highlights</h2>
+		<ul id="highlights">
+		<li>$35,000/year</li>
+		<li>Paid time off</li>
+		<li>Health and Dental insurance</li>
+		<li>Paid time off</li>
+		</ul>
+		<h2>Duties and Responsibilities</h2>
+		<ol id="duties">
+		<li>Operate amusement park rides</li>
+		<li>Provide safety guidelines to guests</li>
+		<li>Conduct pre-operational checks</li>
+		</ol>
+		<h2>Requirements</h2>
+		<ol id="requirements">
+		<li>High school diploma or equivalent</li>
+		<li>Excellent communication skills</li>
+		<li>Previous experience in operating park rides is preferred, but not necessary</li>
+		<li>Able to work on weekends and holidays</li>
+		</ol>
+		<h2>Why work for us?</h2>
+		<p>If you want to get paid to have fun this is the place for you. With out of this world attractions and new wonders of the world. There are many different job opportunities with possibility of advancement. You get to enjoy perks and rewards. Working at Wonder World you get discounted admission, tickets, food, and merchandise. You can also get bonuses, health benefits, retirement plans, and networking opportunities. There are also associate get togethers in the park quarterly. And many more perks available. You also have opportunities to meet new people, learn about other cultures and countries. opportunities are endless and Wonder World</p>
+		
+		<h2>Hiring Process</h2>
+		<ol id="hiring_process">
+		<li>Applicants should submit the completed application form through this online platform or by post to our recruitment center on or before 5 March 2024.</li>
+		<li>Include a cover letter expressing your interest in the position and explaining why you believe you would be a valuable addition to our team.</li>
+		<li>Provide any additional supporting documents or portfolios that showcase your skills, such as certifications, awards, or samples of your work.</li>
+		<li>After the application deadline, our recruitment team will carefully review all submissions and shortlist candidates based on their qualifications.</li>
+		<li>Shortlisted candidates will be contacted for further evaluation, which may include interviews, assessments, or practical demonstrations of skills.</li>
+		<li>Final candidates will undergo reference checks and background verifications to ensure their suitability for the position.</li>
+		<li>Upon accepting the offer, the successful candidate will undergo an onboarding process to familiarize themselves with our organization and their role.</li>
+		</ol>
+		<p>Thank you for considering Wonder World as your potential employer. We look forward to receiving your application and discovering the unique talents you can bring to our team. Good luck!</p>
+	</main>
 
 	<!-- Load external JavaScript -->
 	<script src="scripts.js"></script>
 	
 	<footer>
 			<!-- all other page content -->
-			<!-- <footer id="footer"> -->
 				<!-- Footer -->
+				
 				<div class="List_footer">
 				<ul class="planatrip">
 					<li><a href="#">Plan a Trip</a></li>

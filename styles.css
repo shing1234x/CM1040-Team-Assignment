@@ -1,8 +1,4 @@
-body, div, section, nav, main {
-	outline-offset: -1px;
-	margin:0px;
-}
-
+/*general css for all webpages*/
 .grid-container {
   display: grid;
   grid-template-columns: 250px auto auto;
@@ -13,28 +9,52 @@ body, div, section, nav, main {
   'footer footer footer';
 }
 
+body, div, section, nav, main {
+	outline-offset: -1px;
+	margin:0px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*remove the underline style in hyperlink*/
+a:link {
+  text-decoration: none;
+}
+
+/*make the scroll invisible*/
+::-webkit-Scrollbar{
+	width:0px;
+}
+
+body {
+background-image: url("./images/wonderworld3.jpeg");
+background-size: cover;
+}
+
+body a{
+	color:black;
+}
+
+/* header part*/
 header {
 	grid-area: header;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	height:120px;
+	height:100%;
 }
 
 #parkhours {
-	outline: 1px solid #aaa;
-	font-family: sans-serif;
-	font-size: x-small;
+	padding: 20px 0;
+	font-size: small;
 	text-align: center;
 	float:left;
-	width:20%;
+	width:250px;
 	height:100%;
 }
 	
 #title {
-	outline: 1px solid #aaa;
 	text-align: center;
 	float:left;
-	width:60%;
+	width:calc(100% - 400px);
 	height:100%;
+	max-height:100px;
 }
 
 #logo {
@@ -46,66 +66,75 @@ header {
 
 #logo img{
 	float:left;
-    max-width: 100%;
-    max-height: 100%;
+    height: 100%;
 }
 
 #socialmedia {
-	
-	left: 1150px;	
+	padding: 20px 0;	
 	float:left;
-	width:20%;
-	height:100%;
+	width:150px;
+	height:50px;
 }
 
-#youtube {
+.socialmedia_icon img{
 	float:left;
-	top: 30px;
-	left: 10px;
-}
-
-#Instagram {
-	float:left;
-	top: 30px;
-	left: 50px;
-}
-
-#Twitter {
-	float:left;
-	top: 30px;
-	left: 90px;
+	max-width: calc(100%/3);
+    max-height: 100%;
 }
 
 /* Where home, language, accessibility, jobs, and contact Us is just below main header bar */
 #topnavigationbar{
 	grid-area: nav;
-	outline: 1px solid #aaa;
 	text-align: center;
-	height:30px;
+	height:auto;
+	background-color:rgba(145,200,228,0.8);
+	border: 1px solid #aaa;
 }
 
 #topnavigationbar a{
-	margin: 30px;
+	margin:0px 4%;
+	height:30px;
+	font-size:1.2em;
+	color:black;
 }
 
 /* main section of page */
 main{
 	grid-area: main;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	height: calc(100vh - 120px); /*view height - header - Top Nav Bar*/
+	overflow-y: scroll;
+	background-color:rgba(255,255,255,0.7);
+	color:black;
+	border: 1px solid #aaa;
 	}
 
 /* sidebar or aside */
 #sidebar {
 	grid-area: sidebar;
 	outline: 1px solid #aaa;
-	height: 100%;
+	height: calc(100vh - 120px); /*view height - header - Top Nav Bar*/
+	padding: 0px;
+	overflow-y: scroll;
+	background-color:rgba(255,255,255,0.7);
+	color:black;
 }
-	/*Sidebar(aside) plan a trip */
+
+#sidebar div{
+  border: 1px solid #aaa;
+  border-radius: 7px;
+  padding: 5px;
+}
+
+/*Sidebar(aside) plan a trip */
 .List_sidebar {
 	list-style: none;
 	margin: 0px;
 	padding: 0px;
 	margin-left: 10px;
+}
+.List_sidebar a{
+	color:black;
 }
 
 .List_sidebar li{
@@ -119,14 +148,98 @@ main{
 	margin-left: 15px;
 }
 
+/*css for main section in jobs.html*/
+.grid-container_job {
+  display: grid;
+  grid-template-columns: 350px auto auto;
+  grid-template-areas:
+  'header header header'
+  'nav nav nav'
+  'sidebar main main'
+  'footer footer footer';
+}
+
+#job_details button{
+	padding: 12px 30px;
+	text-align: center;
+	font-size: 1.1em;
+	font-weight: bold;
+	margin: 8px 10px;
+	cursor: pointer;
+	border-radius:7px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#job_details h1{
+	text-align:center;
+	margin-bottom:0px;
+}
+
+#job_details h2{
+	padding-left: 15px;
+	margin-bottom:0px;
+}
+
+#job_details p, #job_details li{
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align:justify;
+}
+
+#sidebar_job {
+	border: 1px solid #aaa;
+	grid-area: sidebar;
+	height: calc(100vh - 120px); /*view height - header - Top Nav Bar*/
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	padding: 0px;
+	overflow-y: scroll;
+	background-color:rgba(255,255,255,0.7);
+	color:black;
+}
+
+#sidebar_job a{
+	color:black;
+}
+
+#sidebar_job h2 {
+	text-align: center;
+}
+
+#sidebar_job div{
+  border: 1px solid #000;
+  border-radius: 7px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+#sidebar_job ul{
+	padding: 0px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	margin-left: 5px;
+	list-style: none;
+}
+
+#sidebar_job li{
+	padding: 0px;
+	padding-left: 2em;
+	margin-right: 5px;
+	margin-bottom: 3px;
+	list-style-position: inside;
+	list-style: circle;
+	text-indent: -1.3em;
+	text-align: left;
+}
+
+/* footer lists */
 footer {
 	grid-area: footer;
-	margin-left:auto;
-    margin-right:auto;
-
-	
+	margin:0px auto;
 }
-/* footer lists */
+
+footer a{
+	color:black;
+}
 
 .List_footer *{
 	list-style: none;
@@ -136,11 +249,7 @@ footer {
 
 .List_footer {
 	float:left;
-	margin-left:20px;
-}
-
-.List_footer_subbullet{
-	margin: 0px;
+	margin: 0px 20px;
 }
 
 .List_footer_subbullet li{
