@@ -145,7 +145,7 @@ main{
 .List_sidebar_subbullet {
 	list-style: circle;
 	padding: 0px;
-	margin-left: 15px;
+	margin-left: 40px;
 }
 
 /*css for main section in jobs.html*/
@@ -186,6 +186,7 @@ main{
 	text-align:justify;
 }
 
+/* sidebar in jobs.html */
 #sidebar_job {
 	border: 1px solid #aaa;
 	grid-area: sidebar;
@@ -226,7 +227,7 @@ main{
 	margin-right: 5px;
 	margin-bottom: 3px;
 	list-style-position: inside;
-	list-style: circle;
+	list-style-type: circle;
 	text-indent: -1.3em;
 	text-align: left;
 }
