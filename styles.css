@@ -112,7 +112,7 @@ main{
 /* sidebar or aside */
 #sidebar {
 	grid-area: sidebar;
-	outline: 1px solid #aaa;
+	border: 1px solid #aaa;
 	height: calc(100vh - 120px); /*view height - header - Top Nav Bar*/
 	padding: 0px;
 	overflow-y: scroll;
@@ -255,4 +255,98 @@ footer a{
 
 .List_footer_subbullet li{
 	text-align: left;
+}
+
+.slideshow_news_container {
+	position: relative;
+	max-height:calc(95vh - 120px);
+	width:95%;
+	margin: auto;
+}
+
+.slideshow_news{
+	position: relative;
+	width:100%;
+	max-height:calc(95vh - 120px);
+}
+
+.slideshow_news img{
+	position: relative;
+	width:100%;
+	max-height:calc(95vh - 120px);
+	object-fit:cover;
+	border-radius: 20px;
+}
+
+.fade{
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.previous_pic, .next_pic {
+	display: flex;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	padding:0px 30px;
+	color: white;
+	font-weight: bold;
+	font-size: 30px;
+	transition: 0.6s ease;
+	border-radius: 20px 3px 3px 20px;
+	user-select: none;
+	cursor: pointer;
+	align-items:center;
+}
+
+.next_pic {
+	right: 0;
+	border-radius: 3px 20px 20px 3px;
+}
+
+.previous_pic:hover, .next_pic:hover {
+  background-color: rgba(0,0,0,0.6);
+}
+
+.slideshow_text{
+	position: absolute;
+	left: 0px;
+	right:0px;
+	bottom: 0px;
+	padding: 10px 30px;
+	font-size: 30px;
+	font-weight: bold;
+	color: white;
+	background-color: rgba(0,0,0);
+	border-radius: 0px 0px 20px 20px;
+	user-select: none;
+	z-index:2;
+}
+
+.slideshow_detail{
+	position: absolute;
+	left: 0px;
+	right:0px;
+	top: 0px;
+	height:0px;
+	padding: 0px 20px;
+	text-align:justify;
+	font-size: 24px;
+	color: white;
+	background-color: rgba(0,0,0);
+	border-radius: 20px 20px 0px 0px;
+	user-select: none;
+	z-index:2;
+	overflow: hidden;
+	transition: .5s ease;
+}
+
+.slideshow_news:hover .slideshow_detail{
+	padding: 10px 20px;
+	height: auto;
 }
