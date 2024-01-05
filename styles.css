@@ -72,8 +72,8 @@ header {
 .socialmedia_icon img{
 	float:left;
 	max-width: calc(100%/3);
-        max-height: 85%;
-	margin-left: 4px;
+        max-height: 80%;
+	margin-left: 2px;
 }
 
 /* Where home, language, accessibility, jobs, and contact Us is just below main header bar */
