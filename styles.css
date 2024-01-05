@@ -48,7 +48,7 @@ header {
 	float:left;
 	width:250px;
 	height:100%;
-	color: rgb(115, 40, 106);
+	color: rgb(255, 88, 0);
 }
 	
 #title {
@@ -57,7 +57,7 @@ header {
 	width:calc(100% - 400px);
 	height:100%;
 	max-height:100px;
-	color:rgb(115, 40, 106);
+	color:rgb(255, 88, 0);
 }
 
 /* social media icons */
@@ -71,7 +71,7 @@ header {
 .socialmedia_icon img{
 	float:left;
 	max-width: calc(100%/3);
-    max-height: 100%;
+        max-height: 100%;
 }
 
 /* Where home, language, accessibility, jobs, and contact Us is just below main header bar */
