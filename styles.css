@@ -250,20 +250,20 @@ footer a{
 	text-align: left;
 }
 
-.slideshow_news_container {
+/*news inside main section in index.html*/
+.news_container {
 	position: relative;
-	max-height:calc(95vh - 120px);
 	width:95%;
 	margin: auto;
 }
 
-.slideshow_news{
+.news_content{
 	position: relative;
 	width:100%;
 	max-height:calc(95vh - 120px);
 }
 
-.slideshow_news img{
+.news_content img{
 	position: relative;
 	width:100%;
 	max-height:calc(95vh - 120px);
@@ -271,7 +271,7 @@ footer a{
 	border-radius: 20px;
 }
 
-.slideshow_text{
+.news_text{
 	position: absolute;
 	left: 0px;
 	right:0px;
@@ -286,7 +286,7 @@ footer a{
 	z-index:2;
 }
 
-.slideshow_detail{
+.news_detail{
 	position: absolute;
 	left: 0px;
 	right:0px;
@@ -304,7 +304,7 @@ footer a{
 	transition: .5s ease;
 }
 
-.slideshow_news:hover .slideshow_detail{
+.news_content:hover .news_detail{
 	padding: 10px 20px;
 	height: auto;
 }
