@@ -72,7 +72,7 @@ header {
 .socialmedia_icon img{
 	float:left;
 	max-width: calc(100%/3);
-        max-height: 90%;
+        max-height: 85%;
 	margin-left: 4px;
 }
 
